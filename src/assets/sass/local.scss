@@ -406,6 +406,8 @@
             right: calc(16 / 16 * 1rem);
             bottom: calc(16 / 16 * 1rem);
             z-index: 10;
+            padding: 10px;
+            border-radius: 10px;
         }
 
         .cs-icon {
@@ -496,6 +498,9 @@
     #gallery-377 {
         .cs-item {
             width: 23.7%;
+        }
+        .cs-hover-box {
+            border-radius: 0px;
         }
 
         .cs-image {
