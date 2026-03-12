@@ -25,7 +25,7 @@
 
         .cs-content {
             /* set text align to left if content needs to be left aligned */
-            text-align: center;
+            text-align: left;
             width: 100%;
             max-width: calc(586/16 * 1rem);
             display: flex;
@@ -223,7 +223,7 @@
 
         .cs-content {
             /* set text align to left if content needs to be left aligned */
-            text-align: center;
+            text-align: left;
             width: 100%;
             max-width: calc(586/16 * 1rem);
             display: flex;
@@ -391,6 +391,12 @@
             height: 81.339719%;
         }
     }
+}
+
+.hr-prim{
+  border: none;
+  height: 2px;
+  background-color: var(--primary);
 }
                                 
                                 
