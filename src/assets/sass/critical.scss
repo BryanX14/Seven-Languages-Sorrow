@@ -41,6 +41,7 @@
         .cs-topper-head{
             color: var(--headerColor);
             padding-bottom: 1.2rem;
+            font-size: 1.1rem;
         }
 
         .cs-title {
@@ -268,7 +269,7 @@
             width: calc(381/16 * 1em);
             height: calc(551/16 * 1em);
             top: 0;
-            left: calc(51/16 * 1em);
+            left: calc(30/16 * 1em);
         }
 
         .cs-picture-small {
@@ -345,6 +346,7 @@
             justify-content: space-between;
             gap: 0;
         }
+
     }
 }                             
 

@@ -138,7 +138,7 @@
 		.cs-icon-wrapper {
 			width: calc(72/16 * 1rem);
 			height: calc(72/16 * 1rem);
-			background-color: var(--secondary);
+			background-color: var(--primary);
 			opacity: 0;
 			border-radius: 50%;
 			display: flex;
@@ -346,7 +346,7 @@
 
         .cs-content {
             /* set text align to left if content needs to be left aligned */
-            text-align: center;
+            text-align: left;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -481,6 +481,8 @@
                 width: calc(281/16 * 1em);
                 height: calc(336/16 * 1em);
                 border: calc(10/16 * 1em) solid var(--primary);
+                background-color: var(--primary);
+                border-radius: 10px;
                 position: absolute;
                 bottom: 0;
                 right: 0;
@@ -495,7 +497,7 @@
             display: block;
             position: absolute;
             top: 0;
-            left: 0;
+            left: 15%;
 
             img {
                 width: 100%;
@@ -524,6 +526,16 @@
             align-items: flex-start;
             grid-column: span 6;
         }
+
+        .cs-image-group {
+            &::before {
+                height: calc(500/16 * 1em);
+            }
+        }
+
+        .cs-picture{
+            left: 0;
+        }
     }
 }
 
@@ -547,12 +559,17 @@
             height: auto;
             min-height: calc(612/16 * 1em);
             order: initial;
+
+            &::before {
+                height: calc(500/16 * 1em);
+            }
         }
 
         .cs-picture {
             height: auto;
             top: 0;
             bottom: calc(28/16 * 1em);
+            left: 0;
         }
     }
 }
@@ -575,7 +592,6 @@
 @media only screen and (min-width: 0rem) {
     #sbsr-2273 {
         padding: var(--sectionPadding);
-        background-color: #fdfaf8;
         overflow: hidden;
         position: relative;
         z-index: 1;
@@ -612,6 +628,7 @@
 
         .cs-text {
             margin-bottom: calc(32/16 * 1rem);
+            text-align: left;
         }
 
         .cs-card-group {
@@ -726,23 +743,25 @@
 
             &::before {
                 content: "";
-                width: calc(300/16 * 1em);
-                height: calc(500/16 * 1em);
+                width: calc(281/16 * 1em);
+                height: calc(336/16 * 1em);
                 border: calc(10/16 * 1em) solid var(--primary);
+                background-color: var(--primary);
+                border-radius: 10px;
                 position: absolute;
-                right: 0;
+                right: 46%;
                 bottom: 0;
                 z-index: -1;
             }
         }
 
         .cs-picture {
-            width: calc(525/16 * 1em);
+            width: calc(460/16 * 1em);
             height: calc(583/16 * 1em);
             display: block;
             position: absolute;
             top: 0;
-            left: 0;
+            left: 8%;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
             img {
@@ -772,6 +791,32 @@
             align-items: flex-start;
             grid-column: span 6;
         }
+
+        .cs-picture {
+            width: calc(525/16 * 1em);
+            height: calc(583/16 * 1em);
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .cs-image-group {
+
+            &::before {
+                right: 60%;
+            }
+        }
     }
 }
 
@@ -795,6 +840,10 @@
             height: auto;
             min-height: calc(612/16 * 1em);
             order: initial;
+
+            &::before {
+                right: 60%;
+            }
         }
 
         .cs-picture {
@@ -810,6 +859,32 @@
     #sbsr-2273 {
         .cs-item {
             flex-direction: row;
+        }
+
+        .cs-picture {
+            width: calc(525/16 * 1em);
+            height: calc(583/16 * 1em);
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .cs-image-group {
+
+            &::before {
+                right: 60%;
+            }
         }
 
         .cs-flower {
