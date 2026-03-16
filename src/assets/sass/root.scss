@@ -1215,13 +1215,14 @@
             max-width: calc(490/16 * 1rem);
             height: auto;
             display: block;
+			padding-bottom: 20px;
         }
 
         .cs-floater {
             width: calc(851/16 * 1rem);
             height: auto;
             background-blend-mode: hard-light;
-            opacity: .84;
+            opacity: .74;
             filter: blur(50px);
             /* prevents the mouse from interacting wiht it */
             pointer-events: none;

@@ -65,7 +65,7 @@
                 content: "";
                 width: 0%;
                 height: 100%;
-                background: #000;
+                background: var(--headerColor);
                 opacity: 1;
                 border-radius: calc(8 / 16 * 1rem);
                 position: absolute;
