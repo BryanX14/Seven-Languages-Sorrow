@@ -377,7 +377,7 @@
             width: 100%;
             /* clips the image corners */
             overflow: hidden;
-            aspect-ratio: (328 / 300);
+            aspect-ratio: calc(328 / 300);
             display: block;
             position: relative;
 
