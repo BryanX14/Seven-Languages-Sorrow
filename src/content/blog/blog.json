@@ -1,5 +1,5 @@
 {
-    "layout": "layouts/post.html",
+    "layout": "",
     "tags": "post",
     "eleventyComputed": {
         "preloadImg": "{{ image }}",
