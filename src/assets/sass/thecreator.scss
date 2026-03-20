@@ -602,5 +602,248 @@
     }
 }
 
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #sbs-1256 {
+        padding: var(--sectionPadding);
+        overflow: hidden;
+        background-color: var(--primaryLight);
+
+        .cs-container {
+            width: 100%;
+            /* changes to 1280px at desktop */
+            max-width: calc(550 / 16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            /* changes to 433px at desktop */
+            max-width: calc(542 / 16 * 1rem);
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+        }
+
+        .cs-text {
+            margin-bottom: calc(16 / 16 * 1rem);
+            &:last-of-type {
+                margin-bottom: calc(32 / 16 * 1rem);
+            }
+        }
+
+        .cs-ul {
+            max-width: calc(630 / 16 * 1rem);
+            margin: 0 0 calc(32 / 16 * 1rem) 0;
+            padding: 0;
+            /* clips the bullets to create the half circle */
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: calc(12 / 16 * 1rem);
+        }
+
+        .cs-li {
+            list-style: none;
+            margin: 0;
+            color: var(--bodyTextColor);
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: calc(12 / 16 * 1rem);
+            position: relative;
+        }
+
+        .cs-button-solid {
+            font-size: calc(16 / 16 * 1rem);
+            /* 46px - 56px */
+            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+            color: #fff;
+            min-width: calc(150 / 16 * 1rem);
+            padding: 0 calc(24 / 16 * 1rem);
+            background-color: var(--primary);
+            border-radius: calc(4 / 16 * 1rem);
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            /* prevents padding from adding to the width */
+            box-sizing: border-box;
+
+            &:before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 0%;
+                background: var(--headerColor);
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                border-radius: calc(4 / 16 * 1rem);
+                transition: width 0.3s;
+            }
+
+            &:hover {
+                &:before {
+                    width: 100%;
+                }
+            }
+        }
+
+        .cs-image-group {
+            /* scales the whole group based on the view width size and stop when that vales equals .845em, resets at desktop */
+            font-size: min(2.207vw, 0.845em);
+            width: calc(650 / 16 * 1em);
+            height: calc(658 / 16 * 1em);
+            display: block;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cs-picture {
+            border-radius: calc(8 / 16 * 1em);
+            overflow: hidden;
+            position: absolute;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .cs-picture1 {
+            width: calc(203 / 16 * 1em);
+            height: calc(203 / 16 * 1em);
+            top: calc(20 / 16 * 1em);
+            left: calc(18 / 16 * 1em);
+        }
+
+        .cs-picture2 {
+            width: calc(208 / 16 * 1em);
+            height: calc(208 / 16 * 1em);
+            top: 0;
+            left: calc(225 / 16 * 1em);
+        }
+
+        .cs-picture3 {
+            width: calc(214 / 16 * 1em);
+            height: calc(214 / 16 * 1em);
+            top: calc(9 / 16 * 1em);
+            right: 0;
+        }
+
+        .cs-picture4 {
+            width: calc(224 / 16 * 1em);
+            height: calc(224 / 16 * 1em);
+            top: calc(227 / 16 * 1em);
+            left: 0;
+        }
+
+        .cs-picture5 {
+            width: calc(287 / 16 * 1em);
+            height: calc(287 / 16 * 1em);
+            box-shadow: 0px 24px 122px 0px rgba(0, 0, 0, 0.78);
+            top: calc(175 / 16 * 1em);
+            left: calc(174 / 16 * 1em);
+            z-index: 10;
+        }
+
+        .cs-picture6 {
+            width: calc(203 / 16 * 1em);
+            height: calc(203 / 16 * 1em);
+            bottom: 0;
+            left: calc(38 / 16 * 1em);
+        }
+
+        .cs-picture7 {
+            width: calc(204 / 16 * 1em);
+            height: calc(204 / 16 * 1em);
+            top: calc(227 / 16 * 1em);
+            right: calc(20 / 16 * 1em);
+        }
+
+        .cs-picture8 {
+            width: calc(223 / 16 * 1em);
+            height: calc(223 / 16 * 1em);
+            bottom: calc(60 / 16 * 1em);
+            left: calc(246 / 16 * 1em);
+        }
+
+        .cs-waves-wrapper {
+            /* changes to 100% at desktop */
+            width: 100vw;
+            height: 150%;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            z-index: -1;
+            /* changes at desktop */
+            transform: translateX(-50%);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #sbs-1256 {
+        .cs-container {
+            max-width: calc(1280 / 16 * 1rem);
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cs-image-group {
+            font-size: min(1.2vw, 1em);
+            flex: none;
+            /* sends it to the right in the 2nd position */
+            order: 2;
+        }
+
+        .cs-waves-wrapper {
+            width: 100%;
+            bottom: 50%;
+            transform: translate(-50%, 50%);
+        }
+    }
+}
+
+                                
+                                
+
+                                
+                                
+                                
+
                                 
                                 
