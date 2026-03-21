@@ -718,7 +718,6 @@
         }
 
         .cs-picture {
-            border-radius: calc(8 / 16 * 1em);
             overflow: hidden;
             position: absolute;
 
@@ -727,6 +726,7 @@
                 height: 100%;
                 object-fit: cover;
                 position: absolute;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
                 top: 0;
                 left: 0;
             }
@@ -762,9 +762,9 @@
 
         .cs-picture5 {
             width: calc(287 / 16 * 1em);
-            height: calc(287 / 16 * 1em);
+            height: calc(400 / 16 * 1em);
             box-shadow: 0px 24px 122px 0px rgba(0, 0, 0, 0.78);
-            top: calc(175 / 16 * 1em);
+            top: calc(90 / 16 * 1em);
             left: calc(174 / 16 * 1em);
             z-index: 10;
         }
