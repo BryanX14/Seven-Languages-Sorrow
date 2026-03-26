@@ -1635,17 +1635,19 @@
 
         .cs-social-li {
             list-style: none;
+
         }
 
         .cs-social-link {
             width: calc(32 / 16 * 1rem);
             height: calc(32 / 16 * 1rem);
-            background-color: #484848;
-            border-radius: 50%;
+            background-color: var(--primaryLight);
+            border-radius: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
             transition: background-color 0.3s;
+			text-decoration: none;
             &:hover {
                 background-color: var(--primary);
 
@@ -1657,11 +1659,12 @@
         }
 
         .cs-social-icon {
-            width: calc(12 / 16 * 1rem);
-            height: auto;
-            display: block;
-            opacity: 0.5;
-        }
+			font-size: 1.2rem;   /* controls size */
+			line-height: 1;    /* prevents vertical offset */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 
         .cs-copyright {
             font-size: calc(16 / 16 * 1rem);
