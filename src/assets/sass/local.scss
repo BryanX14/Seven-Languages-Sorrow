@@ -429,7 +429,7 @@
             text-align: inherit;
             letter-spacing: 0.1em;
             font-weight: 700;
-            color: var(--primary);
+            color: var(--headerColor);
             margin-bottom: calc(4 / 16 * 1rem);
             display: flex;
             justify-content: flex-start;
@@ -441,7 +441,7 @@
                 content: "";
                 width: calc(50 / 16 * 1rem);
                 height: 2px;
-                background: var(--secondary);
+                background: var(--primary);
                 opacity: 1;
                 display: block;
             }
@@ -456,6 +456,10 @@
             color: var(--headerColor);
         }
 
+        .cs-quote-mark{
+            color: var(--primary);
+        }
+
         .cs-name {
             /* 16px - 20px */
             font-size: clamp(1rem, 1.7vw, 1.25rem);
@@ -463,9 +467,9 @@
             font-weight: 700;
             text-transform: uppercase;
             margin: 0;
-            color: var(--primary);
+            color: var(--headerColor);
             display: block;
-            letter-spacing: 0.01em;
+            
         }
     }
 }
