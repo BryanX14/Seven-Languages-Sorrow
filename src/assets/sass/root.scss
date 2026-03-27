@@ -1659,12 +1659,11 @@
         }
 
         .cs-social-icon {
-			font-size: 1.2rem;   /* controls size */
-			line-height: 1;    /* prevents vertical offset */
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
+				width: 1.2rem;
+				height: 1.2rem;
+				display: block;
+				fill: currentColor;
+			}
 
         .cs-copyright {
             font-size: calc(16 / 16 * 1rem);
