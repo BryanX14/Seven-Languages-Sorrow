@@ -347,6 +347,39 @@ permalink: "/resources/"
         </ul>
     </div>
 </section>
+
+<!-- ============================================ -->
+<!--                    CTA                       -->
+<!-- ============================================ -->
+
+<section id="cta-403">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Support Resource</span>
+            <h2 class="cs-title">You Don’t Have to Navigate Grief Alone</h2>
+            <p class="cs-text">
+                The Grief Support Center offers compassionate, personalized support for those navigating loss in all its forms. Whether your grief is recent or long-held, you are met with understanding, not judgment. Explore therapy, coaching, and group support at your own pace.
+            </p>
+            <a href="https://www.griefsupportcenter.com" target="_blank" rel="noopener noreferrer" class="cs-button-solid">
+                Visit Grief Support Center
+            </a>
+        </div>
+    </div>
+
+    <!--Background Image-->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/assets/images/resources/grief-support-bg.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/resources/grief-support-bg.jpg">
+        <img 
+            loading="lazy" 
+            decoding="async" 
+            src="/assets/images/resources/grief-support-bg.jpg" 
+            alt="peaceful calming background representing grief support" 
+            width="1920" 
+            height="660" 
+            aria-hidden="true">
+    </picture>
+</section>
                                 
 <script>
 function showVideo(e) {
@@ -369,8 +402,6 @@ function closeVideo(e) {
     videoContainer.style.display = 'none';
 }
 </script>
-
-
-{% include 'sections/cta.html' %}                                                 
+                                          
 
 {% endblock %}
