@@ -249,6 +249,12 @@
             align-items: flex-start;
         }
 
+        .cs-topper{
+            background-color: var(--headerColor);
+            color: var(--primaryLight);
+            padding: 5px 10px;
+        }
+
         .cs-text {
             margin-bottom: calc(16 / 16 * 1rem);
             &:last-of-type {
