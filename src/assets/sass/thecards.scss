@@ -234,6 +234,7 @@
 
         .cs-title {
             max-width: 30ch;
+            text-align: center;
         }
 
         .cs-text {
@@ -350,6 +351,10 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #sbs-2201 {
+
+        .cs-title{
+            text-align: left;
+        }
         .cs-container {
             max-width: calc(1280/16 * 1rem);
         }
